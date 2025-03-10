@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timeless Inventions - Rolex Watches</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Timeless Inventions</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Shop</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#cart">🛒 Cart (<span id="cart-count">0</span>)</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <h2>Luxury Rolex Watches</h2>
+        <p>Timeless craftsmanship, unmatched elegance.</p>
+        <a href="#products" class="btn">Shop Now</a>
+    </section>
+
+    <section id="products" class="products">
+        <h2>Our Rolex Collection</h2>
+        <div class="product-list">
+            <div class="product">
+                <img src="rolex1.jpg" alt="Rolex Submariner">
+                <h3>Rolex Submariner</h3>
+                <p>R1300</p>
+                <button onclick="addToCart('Rolex Submariner', 1300)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="rolex2.jpg" alt="Rolex Daytona">
+                <h3>Rolex Daytona</h3>
+                <p>R1300</p>
+                <button onclick="addToCart('Rolex Daytona', 1300)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="rolex3.jpg" alt="Rolex Datejust">
+                <h3>Rolex Datejust</h3>
+                <p>R1300</p>
+                <button onclick="addToCart('Rolex Datejust', 1300)">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="cart" class="cart">
+        <h2>Your Cart</h2>
+        <ul id="cart-items"></ul>
+        <p>Total: <strong>R<span id="total-price">0</span></strong></p>
+        <button onclick="clearCart()" class="btn-clear">Clear Cart</button>
+        <button onclick="checkout()" id="checkout-btn" class="btn-checkout">Proceed to Checkout</button>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <p><b>Phone:</b> 066 271 3160</p>
+        <p><b>Email:</b> inventionstimeless858@gmail.com</p>
+        <form>
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Timeless Inventions. All Rights Reserved.</p>
+        <p>📞 066 271 3160 | 📧 inventionstimeless858@gmail.com</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
